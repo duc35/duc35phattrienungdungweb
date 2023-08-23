@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="LOG IN">
+        <h1>Log in</h1>
+        <div class="input">
+            <input type="text" class="input1" placeholder="User Name" required>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="input">
+            <input type="Password" id="pwd" class="input1" placeholder="password" required>
+            <i class="fa-solid fa-lock"></i>
+            <input type="checkbox" id="chk"> Show password
+            <script>
+                const pwd = document.getElementById("pwd")
+                const chk = document.getElementById("chk")
+
+                chk.onchange = function(e) {
+                    pwd.type = chk.checked ? "text" : "password"
+                };
+            </script>
+        </div>
+        <div class="check">
+            <label><input type="checkbox">Remember me</label>
+        </div>
+        <div class="Log In">
+            <a href="#">Log in</a>
+        </div>
+    </div>
+</body>
+</html>
