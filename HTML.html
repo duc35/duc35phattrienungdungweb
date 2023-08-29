@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hoàng đứcNB 2121050418</title>
 </head>
-<body>
-    <div class="LOG IN">
-        <h1>Log in</h1>
-        <div class="input">
-            <input type="text" class="input1" placeholder="User Name" required>
-            <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="input">
-            <input type="Password" id="pwd" class="input1" placeholder="password" required>
-            <i class="fa-solid fa-lock"></i>
-            <input type="checkbox" id="chk"> Show password
-            <script>
-                const pwd = document.getElementById("pwd")
-                const chk = document.getElementById("chk")
+<style>
+    h1{
+        background-color:burlywood;
+        text-align: center;
+    }
+    h2{
+        background-color:burlywood;
+        text-align: center;
+    }
+    input{
+        background-color: antiquewhite;
+    }
+    div{
+        background-color: burlywood;
+    }
+    .duc{
+        background-color: brown;
+    }
 
-                chk.onchange = function(e) {
-                    pwd.type = chk.checked ? "text" : "password"
-                };
-            </script>
-        </div>
-        <div class="check">
-            <label><input type="checkbox">Remember me</label>
-        </div>
-        <div class="Log In">
-            <a href="#">Log in</a>
-        </div>
+
+</style>
+<body>
+    <div>
+        <h1>SIGN UP</h1>
+        <P>YOUTUBE</P>
+        <input placeholder="first name" type="text">
+    <input placeholder="surname" type="text"><br>
+    <input placeholder="phone number or email address" type="text"><br>
+    <input placeholder="reEnterphone number or email address" type="text"><br>
+    <input placeholder="password" type="password"><br>
     </div>
+    <div class="duc"> 
+        <h2>Birth day</h2>
+    <input type="date" name="" id="">
+    <p><img src="https://1000logos.net/wp-content/uploads/2017/05/New-YouTube-logo.jpg" width="10%" height="10%" alt="icon"></p>
+    <input type="radio" name="hihi"> male
+    <input type="radio" name="hihi"> female
+    <input  placeholder="create account" type="submit">
+    </div>
+
 </body>
 </html>
