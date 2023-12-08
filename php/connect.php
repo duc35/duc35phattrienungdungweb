@@ -13,10 +13,10 @@
     $db = 'hoangduc';
     $conn = new mysqli($servername, $username, $password, $db);
 
-    // if($conn-> connect_error){
-    //     die('Connection failed: '. $conn-> connect_error);
-    // }
-    // echo"Connected successfully <br>";
+    if($conn-> connect_error){
+        die('Connection failed: '. $conn-> connect_error);
+    }
+    echo"Connected successfully <br>";
     
     // $sql = "INSERT INTO flights (Origin, Destination, Duration) VALUES ('Hà Nội','Paris','4000')";
     // // run the sql query

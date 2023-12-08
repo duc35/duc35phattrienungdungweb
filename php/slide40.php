@@ -10,7 +10,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$db = 'myDB';
+$db = 'hoangduc';
 $conn = new mysqli($servername, $username, $password, $db);
 if ($conn->connection_error)
 {
